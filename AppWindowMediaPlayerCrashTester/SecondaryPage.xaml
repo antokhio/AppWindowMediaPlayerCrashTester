@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="AppWindowMediaPlayerCrashTester.SecondaryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppWindowMediaPlayerCrashTester"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <MediaPlayerElement AreTransportControlsEnabled="False" AutoPlay="True" Source="ms-appx:///Assets/Media/record1.mp4">
+            <MediaPlayerElement.TransportControls>
+                <MediaTransportControls Style="{StaticResource MYMediaTransportControlsStyle}"
+                                            IsFastForwardButtonVisible="False"
+                                            IsFastRewindButtonVisible="False"
+                                            IsNextTrackButtonVisible="False"
+                                            IsPreviousTrackButtonVisible="False"
+                                            IsRepeatButtonVisible="True"
+                                            IsRepeatEnabled="True"
+                                            IsStopButtonVisible="False"
+                                            IsPlaybackRateButtonVisible="False" 
+                                            IsFullWindowEnabled="False" 
+                                            IsFullWindowButtonVisible="False" 
+                                            IsZoomButtonVisible="False" 
+                                            IsPlaybackRateEnabled="False"
+                                            IsCompact="True" 
+                                            />
+            </MediaPlayerElement.TransportControls>
+        </MediaPlayerElement>
+    </Grid>
+</Page>
